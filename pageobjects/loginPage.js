@@ -1,0 +1,1 @@
+export const loginPageLogo = '.login_logo';

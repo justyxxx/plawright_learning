@@ -1,0 +1,31 @@
+{
+  "name": "plawright_learning",
+  "version": "1.0.0",
+  "description": "playwright demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justyxxx/plawright_learning.git"
+  },
+  "keywords": [
+    "javasript",
+    "playwright"
+  ],
+  "author": "Anton Vorobyev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justyxxx/plawright_learning/issues"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.29.1",
+    "fs": "^0.0.1-security",
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "allure-playwright": "^2.0.0-beta.16"
+  },
+  "homepage": "https://github.com/justyxxx/plawright_learning#readme"
+}
