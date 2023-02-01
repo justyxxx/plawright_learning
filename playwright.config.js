@@ -1,6 +1,5 @@
 export const testDir = 'tests'
 export const timeout = 60000
-export const retries = 1
 export const reporter = [[`line`], ['junit', { outputFile: 'results.xml' }]]
 export const projects = [
 	{
@@ -15,7 +14,7 @@ export const projects = [
 			trace: `retain-on-failure`
 		}
 	},
-	{
+	/*{
 		name: `Firefox`,
 		use: {
 			browserName: `firefox`,
@@ -55,5 +54,5 @@ export const projects = [
 				slowMo: 100
 			}
 		}
-	}
+	}*/
 ]

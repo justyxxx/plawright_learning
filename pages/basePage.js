@@ -28,8 +28,29 @@ class BasePage {
 		}
 	}
 
+    async isElementEnabled(selector, errorMessage) {
+		await this.page.waitForSelector(selector)
+		const element = this.page.locator(selector)
+		try {
+			const isEnabled = await element.isEnabled()
+			expect(isEnabled).toBeTruthy()
+		} catch (error) {
+			throw new Error(`${errorMessage}`)
+		}
+	}
+
 	async getUrl() {
 		return this.page.url()
+	}
+
+    async waitAndFill(selector, text) {
+		await this.page.waitForSelector(selector)
+		await this.page.fill(selector, text)
+	}
+
+    async waitAndClick(selector) {
+		await this.page.waitForSelector(selector)
+		return await this.page.click(selector)
 	}
 }
 export default BasePage
